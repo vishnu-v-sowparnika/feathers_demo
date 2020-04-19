@@ -1,0 +1,59 @@
+{
+  "name": "feathers-demo",
+  "description": "sample project",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Vishnu",
+    "email": "vishnu94sowparnika@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run jest",
+    "lint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "jest": "jest  --forceExit"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.3",
+    "@feathersjs/authentication-jwt": "^2.0.10",
+    "@feathersjs/authentication-local": "^4.5.3",
+    "@feathersjs/authentication-oauth": "^4.5.3",
+    "@feathersjs/configuration": "^4.5.3",
+    "@feathersjs/errors": "^4.5.3",
+    "@feathersjs/express": "^4.5.3",
+    "@feathersjs/feathers": "^4.5.3",
+    "@feathersjs/socketio": "^4.5.3",
+    "@feathersjs/transport-commons": "^4.5.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "feathers-sequelize": "^6.1.0",
+    "helmet": "^3.22.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.6",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.2.1"
+  }
+}
